@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="com/ibm/connectors/ldap/ComIbmRequest.msgnode" nsPrefix="com_ibm_connectors_ldap_ComIbmRequest.msgnode">
+  <eClassifiers xmi:type="eflow:PropertySet" name="nsMappingTableRow">
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.nsPrefix" name="nsPrefix">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.namespace" name="namespace" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <propertyOrganizer>
+      <propertyDescriptor propertyEditor="com.ibm.etools.mft.flow.properties.celleditors.StringCellPropertyEditor" describedAttribute="Property.nsPrefix">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.nsPrefix" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+        <propertyDescriptor propertyEditor="com.ibm.etools.mft.flow.properties.celleditors.StringCellPropertyEditor" describedAttribute="Property.namespace">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.namespace" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+        </propertyDescriptor>
+      </propertyDescriptor>
+    </propertyOrganizer>
+  </eClassifiers>
+  <eClassifiers xmi:type="eflow:PropertySet" name="monitorEventsRow">
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.eventEnabled" name="eventEnabled" lowerBound="1" defaultValueLiteral="true">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.eventSourceDescription" name="eventSourceDescription" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.eventSourceName" name="eventSourceName" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.eventIdentity" name="eventIdentity" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.eventFilter" name="eventFilter" lowerBound="1" defaultValueLiteral="true()">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <propertyOrganizer>
+      <propertyDescriptor propertyEditor="com.ibm.etools.mft.ibmnodes.editors.monitoring.MonitorEventEnabledCellPropertyEditor" describedAttribute="Property.eventEnabled">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.eventEnabled" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+        <propertyDescriptor propertyEditor="com.ibm.etools.mft.ibmnodes.editors.monitoring.MonitorEventSourceDescriptionCellPropertyEditor" readOnly="true" describedAttribute="Property.eventSourceDescription">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.eventSourceDescription" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+          <propertyDescriptor propertyEditor="com.ibm.etools.mft.ibmnodes.editors.monitoring.MonitorEventSourceAddressCellPropertyEditor" readOnly="true" describedAttribute="Property.eventSourceName">
+            <propertyName xmi:type="utility:TranslatableString" key="Property.eventSourceName" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+            <propertyDescriptor propertyEditor="com.ibm.etools.mft.ibmnodes.editors.monitoring.MonitorEventIdentityCellPropertyEditor" readOnly="true" describedAttribute="Property.eventIdentity">
+              <propertyName xmi:type="utility:TranslatableString" key="Property.eventIdentity" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+              <propertyDescriptor propertyEditor="com.ibm.etools.mft.ibmnodes.editors.monitoring.MonitorEventDetailsCellPropertyEditor" readOnly="true" describedAttribute="Property.eventFilter">
+                <propertyName xmi:type="utility:TranslatableString" key="Property.eventFilter" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+              </propertyDescriptor>
+            </propertyDescriptor>
+          </propertyDescriptor>
+        </propertyDescriptor>
+      </propertyDescriptor>
+    </propertyOrganizer>
+  </eClassifiers>
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" message="in">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.connectorName" name="connectorName" defaultValueLiteral="LDAP">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.hostname" name="hostname" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.port" name="port" lowerBound="1" defaultValueLiteral="389">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.bindUserName" name="bindUserName" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.bindUserPassword" name="bindUserPassword" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.searchBase" name="searchBase" lowerBound="1" defaultValueLiteral="O=">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.userFilter" name="userFilter" lowerBound="1" defaultValueLiteral="(&amp;(objectClass=person)(uid=%v))">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.attributes" name="attributes" lowerBound="1">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.messageDomainProperty" name="messageDomainProperty">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.messageSetProperty" name="messageSetProperty">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.messageTypeProperty" name="messageTypeProperty">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.messageFormatProperty" name="messageFormatProperty">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="Property.nsMappingTable" name="nsMappingTable" upperBound="-1" eType="//nsMappingTableRow" containment="true"/>
+    <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="Property.monitorEvents" name="monitorEvents" upperBound="-1" eType="//monitorEventsRow" containment="true"/>
+    <translation xmi:type="utility:TranslatableString" key="ComIbmRequest" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/LDAPNodes/icons/full/obj16/com/ibm/connectors/ldap/ComIbmRequest.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/LDAPNodes/icons/full/obj30/com/ibm/connectors/ldap/ComIbmRequest.gif"/>
+    <composition>
+      <nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.in" location="100,20">
+        <translation xmi:type="utility:TranslatableString" key="InTerminal.in" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+      </nodes>
+      <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.out" location="200,40">
+        <translation xmi:type="utility:TranslatableString" key="OutTerminal.out" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+      </nodes>
+      <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.failure" location="300,60">
+        <translation xmi:type="utility:TranslatableString" key="OutTerminal.failure" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+      </nodes>
+    </composition>
+    <propertyOrganizer>
+      <propertyDescriptor groupName="Group.Basic" hidden="true" describedAttribute="Property.connectorName">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.connectorName" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+        <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.hostname">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.hostname" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+          <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.port">
+            <propertyName xmi:type="utility:TranslatableString" key="Property.port" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+            <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.bindUserName">
+              <propertyName xmi:type="utility:TranslatableString" key="Property.bindUserName" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+              <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.bindUserPassword">
+                <propertyName xmi:type="utility:TranslatableString" key="Property.bindUserPassword" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                <propertyDescriptor groupName="Group.Basic" describedAttribute="Property.searchBase">
+                  <propertyName xmi:type="utility:TranslatableString" key="Property.searchBase" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                  <propertyDescriptor groupName="Group.Basic" describedAttribute="Property.userFilter">
+                    <propertyName xmi:type="utility:TranslatableString" key="Property.userFilter" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                    <propertyDescriptor groupName="Group.Basic" describedAttribute="Property.attributes">
+                      <propertyName xmi:type="utility:TranslatableString" key="Property.attributes" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                      <propertyDescriptor groupName="Group.parsing" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.MRMessageDomainPropertyEditor" describedAttribute="Property.messageDomainProperty">
+                        <propertyName xmi:type="utility:TranslatableString" key="Property.messageDomainProperty" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                        <propertyDescriptor groupName="Group.parsing" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.MRMessageSetNamePropertyEditorV8" describedAttribute="Property.messageSetProperty">
+                          <propertyName xmi:type="utility:TranslatableString" key="Property.messageSetProperty" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                          <propertyDescriptor groupName="Group.parsing" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.MRMessageTypePropertyEditorV8" describedAttribute="Property.messageTypeProperty">
+                            <propertyName xmi:type="utility:TranslatableString" key="Property.messageTypeProperty" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                            <propertyDescriptor groupName="Group.parsing" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.MRMessageFormatPropertyEditor" describedAttribute="Property.messageFormatProperty">
+                              <propertyName xmi:type="utility:TranslatableString" key="Property.messageFormatProperty" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                              <propertyDescriptor groupName="Group.monitoring" readOnly="true" hidden="true" describedReference="Property.nsMappingTable">
+                                <propertyName xmi:type="utility:TranslatableString" key="Property.nsMappingTable" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                                <propertyDescriptor groupName="Group.monitoring" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.monitoring.MonitoringEventsComplexPropertyEditor" describedReference="Property.monitorEvents">
+                                  <propertyName xmi:type="utility:TranslatableString" key="Property.monitorEvents" bundleName="com/ibm/connectors/ldap/ComIbmRequest" pluginId="LDAPNodes"/>
+                                </propertyDescriptor>
+                              </propertyDescriptor>
+                            </propertyDescriptor>
+                          </propertyDescriptor>
+                        </propertyDescriptor>
+                      </propertyDescriptor>
+                    </propertyDescriptor>
+                  </propertyDescriptor>
+                </propertyDescriptor>
+              </propertyDescriptor>
+            </propertyDescriptor>
+          </propertyDescriptor>
+        </propertyDescriptor>
+      </propertyDescriptor>
+    </propertyOrganizer>
+  </eClassifiers>
+</ecore:EPackage>
